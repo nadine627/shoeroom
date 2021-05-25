@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<title>Shoe Room</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img1.jpeg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="#about" class="w3-bar-item w3-button">MENU</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT US</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><br></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><br></b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let Me See the Products</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Heels</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sneakers</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sports Shoes</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Black Heels</b> <h1> 
+      <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$100</span></h1>
+      <img src="img2.jpeg">
+      <hr>
+   
+      <h1><b>Yellow Heels</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$120</span></h1>
+      <img src="img3.jpeg">
+      <hr>
+      
+      <h1><b>Red Heels</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$120</span></h1>
+      <img src="img4.jpeg">
+      <hr>
+
+      <h1><b>White Heels</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$110</span></h1>
+      <img src="img5.jpeg">
+      <hr>
+
+      <h1><b>Blue Heels</b> <span class="w3-tag w3-red w3-round">Offer!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$120</span></h1>
+      <img src="img6.jpeg">
+      <hr>
+
+      <h1><b>Green Heels</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$130</span></h1>
+      <img src="img7.jpeg">
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Open Sneakers</b> <span class="w3-tag w3-grey w3-round">Offer</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$90</span></h1>
+      <img src="img8.jpeg">
+      <hr>
+   
+      <h1><b>Custom Sneakers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$80</span></h1>
+      <img src="img9.jpeg">
+      <hr>
+      
+      <h1><b>Sam Sneakers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$70</span></h1>
+      <img src="img10.jpeg">
+      <hr>
+
+      <h1><b>Quicker Snaekers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$80</span></h1>
+      <img src="img11.jpeg">
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Adidas</b> <span class="w3-tag w3-grey w3-round">New Arrival</span><span class="w3-right w3-tag w3-dark-grey w3-round">$135</span></h1>
+      <img src="img12.jpeg">
+      <hr>
+   
+      <h1><b>Nike</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$150</span></h1>
+      <img src="img13.jpeg">
+      <hr>
+      
+      <h1><b>Ner Balance</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$140</span></h1>
+     <img src="img14.jpeg">
+      <hr>
+      
+  
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Shoeroom is a fashionable, comfort, and trendy footwear Brand, with a quality and affordable prices, aims to inspire with the latest fashion trends. Encompassing a distinct contemporary and modem style, providing a large variety of ladies shoes and bags. Each collection illustrates our commitment to balancing essential pieces with the season's iconic trends, always maintaining a focus on wear ability, quality and style.</p>
+    
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact Us</h1>
+    <p class="w3-xxlarge"><strong>Contact Us,</strong> just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Email" required name="People"></p>
+ <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Telephone Number" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by Nadeen BIS </p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
